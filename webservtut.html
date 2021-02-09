@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>Mohammed Syed - Setup a Webserver on Local Computer Using Docker</title>
+</head>
+<body>
+     <header>
+      <nav class="navbar bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Web Server on Docker</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./index.html"
+                onclick="return show('page1','');"
+                >Virtualization</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="virVsContainer.html"
+                onclick="return show('Page2','Page1');"
+                >Virtualization Vs. Containerization</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="container.html"
+                onclick="return show('Page2','Page1');"
+                >Containerization</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="doclinuxcom.html"
+                onclick="return show('Page2','Page1');"
+                >Docker Commands</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="dockerpycharm.html"
+                onclick="return show('Page2','Page1');"
+                >Pycharm with Docker</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <h1>Setup a Webserver on Local Computer Using Docker</h1>
+    <p>A webserver can be made by utilzing Docker</p>
+    <p>In the tutorial Apache Web Server on Ubuntu is used</p>
+    <a href="https://www.tutorialspoint.com/docker/building_web_server_docker_file.htm">Source: Building Web Server with Docker</a>
+    <ol>
+        <li>By using vim and the following commands, create the Docker File</li>
+        <img src="doccommand1.jpg" alt="Docker Commands">
+        <li>Execute Docker build command to make Docker file, which is sudo docker build –t=”mywebserver” </li>
+        <li>Make a container from that image through the Docker run command: sudo docker run –d –p 80:80 mywebserver </li>
+        <img src="doccommand2.jpg" alt="Docker Commands">
+        <li>In the web browser, from Docker host the Apache is running can be seen</li>
+        <img src="docapacherun.jpg" alt="Docker Apache Running">
+    </ol>
+    
+</body>
+</html>
