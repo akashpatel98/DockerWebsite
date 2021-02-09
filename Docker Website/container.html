@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Akash Patel IS Site</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Containerization</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./index.html"
+                onclick="return show('page1','');"
+                >Virtualization</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="virVsContainer.html"
+                onclick="return show('Page2','Page1');"
+                >Virtualization Vs. Containerization</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="return show('Page2','Page1');"
+                >Web Servre on Docker</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="return show('Page2','Page1');"
+                >Docker Commands</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="return show('Page2','Page1');"
+                >Pycharm with Docker</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>What is Containerzation?</h1>
+      <p>Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS). A container is essentially a fully packaged and portable computing environment: </p>
+
+      <p>Everything an application needs to run – its binaries, libraries, configuration files and dependencies – is encapsulated and isolated in its container. </p>
+      <p>The container itself is abstracted away from the host OS, with only limited access to underlying resources – much like a lightweight virtual machine (VM). </p>
+<p>As a result, the containerized application can be run on various types of infrastructure—on bare metal, within VMs, and in the cloud—without needing to refactor it for each environment.</p>
+      <img src="./container.png" class="img-fluid" alt="Containerization" />
+    </div>
+  </body>
+</html>
